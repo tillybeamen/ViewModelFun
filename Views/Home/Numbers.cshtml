@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello!</title>
+    </head>
+    <body>
+        @{
+            List<int> IntList = new List<int>() {1, 2, 10, 21, 8, 7, 3};
+
+                <h1>Here are some numbers!</h1>
+                @foreach(int number in IntList)
+                {
+                    <div>
+                        <p>@number</p>
+                    </div>
+                }
+        }
+    </body>
+</html>

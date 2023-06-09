@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello!</title>
+    </head>
+    <body>
+        @{
+            List<string> StringList = new List<string>() {"Today is Friday! I just got back from an appointment and now I am back to work. Later on I will go workout and then head to the movies to see the Little Mermaid!"};
+
+                <h1>Here is a message</h1>
+                @foreach(string message in StringList)
+                {
+                    <div>
+                        <p>@message</p>
+                    </div>
+                }
+        }
+    </body>
+</html>
